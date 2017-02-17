@@ -13,7 +13,7 @@ public class Regexp: NSObject {
     /**
      只能输入数字
      */
-    class func check(number: String) -> Bool {
+    public class func check(number: String) -> Bool {
         let regEx = "^[0-9]+$"
         return baseCheck(regEx: regEx, data: number)
     }
@@ -21,7 +21,7 @@ public class Regexp: NSObject {
     /**
      校验只能输入n位的数字
      */
-    class func check(length: Int, number: String) -> Bool {
+    public class func check(length: Int, number: String) -> Bool {
         let regEx = String(format: "^\\d{%d}$", length)
         return baseCheck(regEx: regEx, data: number)
     }
@@ -29,7 +29,7 @@ public class Regexp: NSObject {
     /**
      邮箱校验
      */
-    class func check(email: String) -> Bool {
+    public class func check(email: String) -> Bool {
         let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Z]a-z{2,4}"
         return baseCheck(regEx: regEx, data: email)
     }
@@ -37,7 +37,7 @@ public class Regexp: NSObject {
     /**
      验证手机号
      */
-    class func check(mobilePhone: String) -> Bool {
+    public class func check(mobilePhone: String) -> Bool {
         let regEx = "^1[3|4|5|7|8][0-9]\\d{8}$"
         return baseCheck(regEx: regEx, data: mobilePhone)
     }
@@ -45,7 +45,7 @@ public class Regexp: NSObject {
     /**
      验证电话号
      */
-    class func check(phone: String) -> Bool {
+    public class func check(phone: String) -> Bool {
         let regEx = "^(\\d{3,4}-)\\d{7,8}$"
         return baseCheck(regEx: regEx, data: phone)
     }
@@ -53,7 +53,7 @@ public class Regexp: NSObject {
     /**
      身份证验证
      */
-    class func check(idCard: String) -> Bool {
+    public class func check(idCard: String) -> Bool {
         let regEx = "(^[0-9]{15}$)|([0-9]{17}([0-9]|X)$)"
         return baseCheck(regEx: regEx, data: idCard)
     }
@@ -61,7 +61,7 @@ public class Regexp: NSObject {
     /**
      密码校验
      */
-    class func check(shortest: NSInteger, longest: NSInteger, password: String) -> Bool {
+    public class func check(shortest: NSInteger, longest: NSInteger, password: String) -> Bool {
         let regEx = String(format: "^[a-zA-Z0-9]{%ld,%ld}+$", shortest, longest, password)
         return baseCheck(regEx: regEx, data: password)
     }
@@ -69,7 +69,7 @@ public class Regexp: NSObject {
     /**
      由数字和26个英文字母组成的字符串
      */
-    class func check(alphanumeric: String) -> Bool {
+    public class func check(alphanumeric: String) -> Bool {
         let regEx = "^[A-Za-z0-9]+$"
         return baseCheck(regEx: regEx, data: alphanumeric)
     }
@@ -77,7 +77,7 @@ public class Regexp: NSObject {
     /**
      小写字母
      */
-    class func check(lowercase: String) -> Bool {
+    public class func check(lowercase: String) -> Bool {
         let regEx = "^[a-z]+$"
         return baseCheck(regEx: regEx, data: lowercase)
     }
@@ -85,7 +85,7 @@ public class Regexp: NSObject {
     /**
      大写字母
      */
-    class func check(uppercase: String) -> Bool {
+    public class func check(uppercase: String) -> Bool {
         let regEx = "^[A-Z]+$"
         return baseCheck(regEx: regEx, data: uppercase)
     }
@@ -93,7 +93,7 @@ public class Regexp: NSObject {
     /**
      26位英文字母
      */
-    class func check(lowercaseAndUppercase: String) -> Bool {
+    public class func check(lowercaseAndUppercase: String) -> Bool {
         let regEx = "^[A-Za-z]+$"
         return baseCheck(regEx: regEx, data: lowercaseAndUppercase)
     }
@@ -101,7 +101,7 @@ public class Regexp: NSObject {
     /**
      特殊字符
      */
-    class func check(specialChar: String) -> Bool {
+    public class func check(specialChar: String) -> Bool {
         let regEx = "[^%&',;=?$]+"
         return baseCheck(regEx: regEx, data: specialChar)
     }
