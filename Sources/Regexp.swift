@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Regexp: NSObject {
+public class Regexp: NSObject {
     
     /**
      只能输入数字
