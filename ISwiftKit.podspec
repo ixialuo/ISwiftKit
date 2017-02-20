@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ixialuo/ISwiftKit.git", :tag => s.version }
   s.source_files = "Sources/Regexp.swift"
   s.requires_arc = true
+  s.dependency 'AlamofireObjectMapper'
 
 end
