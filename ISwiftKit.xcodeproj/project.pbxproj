@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2E13C21E5A90910037AFB0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E13BD1E5A90910037AFB0 /* CustomButton.swift */; };
+		CE2E13C31E5A90910037AFB0 /* CustomFontAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E13BE1E5A90910037AFB0 /* CustomFontAdapter.swift */; };
+		CE2E13C41E5A90910037AFB0 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E13BF1E5A90910037AFB0 /* CustomLabel.swift */; };
+		CE2E13C51E5A90910037AFB0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E13C01E5A90910037AFB0 /* CustomTextField.swift */; };
+		CE2E13C61E5A90910037AFB0 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E13C11E5A90910037AFB0 /* CustomTextView.swift */; };
 		CE7DA2271E56D53E0095FD1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7DA2261E56D53E0095FD1D /* AppDelegate.swift */; };
 		CE7DA2291E56D53E0095FD1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7DA2281E56D53E0095FD1D /* ViewController.swift */; };
 		CE7DA22C1E56D53E0095FD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7DA22A1E56D53E0095FD1D /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2E13BD1E5A90910037AFB0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CE2E13BE1E5A90910037AFB0 /* CustomFontAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontAdapter.swift; sourceTree = "<group>"; };
+		CE2E13BF1E5A90910037AFB0 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		CE2E13C01E5A90910037AFB0 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CE2E13C11E5A90910037AFB0 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		CE7DA2231E56D53E0095FD1D /* ISwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7DA2261E56D53E0095FD1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7DA2281E56D53E0095FD1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,11 @@
 			isa = PBXGroup;
 			children = (
 				CE7DA2391E56D58A0095FD1D /* Regexp.swift */,
+				CE2E13BD1E5A90910037AFB0 /* CustomButton.swift */,
+				CE2E13BE1E5A90910037AFB0 /* CustomFontAdapter.swift */,
+				CE2E13BF1E5A90910037AFB0 /* CustomLabel.swift */,
+				CE2E13C01E5A90910037AFB0 /* CustomTextField.swift */,
+				CE2E13C11E5A90910037AFB0 /* CustomTextView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -148,8 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2E13C51E5A90910037AFB0 /* CustomTextField.swift in Sources */,
+				CE2E13C21E5A90910037AFB0 /* CustomButton.swift in Sources */,
+				CE2E13C61E5A90910037AFB0 /* CustomTextView.swift in Sources */,
+				CE2E13C41E5A90910037AFB0 /* CustomLabel.swift in Sources */,
 				CE7DA2291E56D53E0095FD1D /* ViewController.swift in Sources */,
 				CE7DA2271E56D53E0095FD1D /* AppDelegate.swift in Sources */,
+				CE2E13C31E5A90910037AFB0 /* CustomFontAdapter.swift in Sources */,
 				CE7DA23A1E56D58A0095FD1D /* Regexp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +334,7 @@
 				CE7DA2371E56D53E0095FD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
