@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://blog.csdn.net/ixialuo"
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/ixialuo/ISwiftKit.git", :tag => s.version }
-  s.source_files = "Sources/Regexp.swift"
+  s.source_files = "Sources/*.swift"
   s.requires_arc = true
   s.dependency 'AlamofireObjectMapper'
 
