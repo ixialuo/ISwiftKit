@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CustomTextField: UITextField {
+public class CustomTextField: UITextField {
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         super.font = CustomFontAdapter.adjustFont(font: font)
     }
     
-    override var font: UIFont! {
+    override public var font: UIFont! {
         didSet {
             super.font = CustomFontAdapter.adjustFont(font: font)
         }

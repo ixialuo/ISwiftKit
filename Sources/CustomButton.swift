@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CustomButton: UIButton {
+public class CustomButton: UIButton {
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         super.titleLabel?.font = CustomFontAdapter.adjustFont(font: titleLabel!.font)
     }
     
-    var textFont: UIFont {
+    public var textFont: UIFont {
         get {
             return super.titleLabel!.font
         }

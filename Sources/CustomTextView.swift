@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CustomTextView: UITextView {
+public class CustomTextView: UITextView {
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         super.font = CustomFontAdapter.adjustFont(font: font)
     }
     
-    override var font: UIFont! {
+    override public var font: UIFont! {
         didSet {
             if oldValue == nil { return }
             super.font = CustomFontAdapter.adjustFont(font: font)
