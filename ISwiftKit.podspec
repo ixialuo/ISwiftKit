@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ISwiftKit"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "ISwiftKit for iOS swift"
   s.description  = <<-DESC
 			All tools in ISwitKit, it’s very convenient.
@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/*.swift"
   s.requires_arc = true
   s.dependency 'AlamofireObjectMapper'
+  s.dependency 'Kingfisher'
 
 end
