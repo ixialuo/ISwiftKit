@@ -8,6 +8,7 @@
 
 import UIKit
 
+private let IS_IPHONE_X = UIScreen.main.bounds.height == 812
 private let IS_IPHONE_7 = UIScreen.main.bounds.height == 667
 private let IS_IPHONE_5 = UIScreen.main.bounds.height == 568
 private let IS_IPHONE_4 = UIScreen.main.bounds.height == 480
@@ -20,7 +21,7 @@ class CustomFontAdapter: NSObject {
     class func adjustFont(font: UIFont?) -> UIFont? {
         if let aFont = font {
             var newFont: UIFont?
-            if IS_IPHONE_7 {
+            if IS_IPHONE_7 || IS_IPHONE_X {
                 newFont = UIFont(name: aFont.fontName, size: aFont.pointSize - IPHONE7_DECREASE)
             }else if IS_IPHONE_5 {
                 newFont = UIFont(name: aFont.fontName, size: aFont.pointSize - IPHONE5_DECREASE)
