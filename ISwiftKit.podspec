@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ISwiftKit"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "ISwiftKit for iOS swift"
   s.description  = <<-DESC
 			All tools in ISwitKit, it’s very convenient.
